@@ -87,7 +87,16 @@ div.main-content {
 /*IMG*/
 div.item, img, section#section1 {
     width: 525px;
-    display: inline;
+   
+}
+
+.item {
+    border: 10px solid red;
+}
+
+.item img {
+    height: 100vh;
+    object-fit: cover;
 }
 
 div.container {
