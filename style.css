@@ -109,3 +109,7 @@ ul#social-icons.inline-list {
     margin-top: 110px;
     margin-left: -5px;
 }
+
+section#section1 viewport {
+    height: 100vh;
+}
