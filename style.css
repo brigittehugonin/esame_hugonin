@@ -45,19 +45,14 @@ body {
     transition: all .3s;
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    ul { list-style-type: none;
-        li {
-            a {
-                
-                color: black;
-                font-size: 6em;
-            }
-        }
-    }
+    justify-content: center; 
+      
 }
 
+#menu li {
+    list-style-type: none;
+
+}
 #menu.active {
     right: 0;
 }
@@ -108,11 +103,6 @@ a.button {
     color: rgb(156, 156, 156);
     text-decoration: none;
 }
-
-
-
-
-
 
 a.button:hover {
     color: #fcff51;
