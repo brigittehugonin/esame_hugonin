@@ -183,5 +183,12 @@ section#section1 viewport {
 
 .TestoDescrizione {
     text-align: center;
+    margin-top: 250px;
 }
 
+h5 {
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 1px;
+    color: #FFFFFF;
+    }
