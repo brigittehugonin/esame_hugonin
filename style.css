@@ -180,11 +180,7 @@ section#section1 viewport {
 
 
 
-.BoxDescrizione  {
-     align-content: center;
-     margin-top: 250px;
- }
 
 .TestoDescrizione {
-     text-align: left;
- }
+    text-align: center;
+}
