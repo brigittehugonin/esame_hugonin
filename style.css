@@ -47,12 +47,10 @@ body {
     align-items: center;
     justify-content: center;
 
-    ul {
+    ul { list-style-type: none;
         li {
-            list-style-type: none;
-
             a {
-                text-decoration: none;
+                
                 color: black;
                 font-size: 6em;
             }
@@ -102,23 +100,7 @@ p {
     color: rgb(156, 156, 156);
 }
 
-
-
-
-
-button {
-    background-color: #fcff51;
-    font-weight: 200;
-    font-size: 20px;
-    color: aliceblue;
-    cursor: pointer;
-}
-
-#ButtonMore button:hover {
-    color: #fcff51;
-}
-
-
+/*contattami*/
 a.button {
     font-weight: 200;
     font-size: 20px;
@@ -127,20 +109,35 @@ a.button {
     text-decoration: none;
 }
 
+
+
+
+
+
 a.button:hover {
     color: #fcff51;
 }
 
-.main-content #DueColonne {
+#TestoNascosto {
     display: none;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 1px;
 }
 
-.main-content #ButtonMore {
-    color: #fcff51;
+/*per sapere di più*/
+#ButtonMore {
+    color: #a0a152;
     text-decoration: underline 6%;
     cursor: pointer;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 1px;
 }
 
+#ButtonMore:hover{
+        color: #fcff51;
+}
 
 
 

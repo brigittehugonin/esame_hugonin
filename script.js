@@ -14,16 +14,16 @@ const toggleMenu = () => {
     menu.classList.toggle('active')
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
-})
+})*/
 
 
 
 
 //read more
-var nuovoTesto = document.querySelector('#DueColonne');
-var buttonMore = document.querySelector('#ButtonMore');
+let nuovoTesto = document.querySelector('#TestoNascosto');
+let buttonMore = document.querySelector('#ButtonMore');
 
 
 
@@ -39,5 +39,6 @@ function toggleReadMore() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    toggle.addEventListener('click', toggleMenu)
     buttonMore.addEventListener('click', toggleReadMore)
 })
