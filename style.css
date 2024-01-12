@@ -175,3 +175,14 @@ ul#social-icons.inline-list {
 section#section1 viewport {
     height: 100vh;
 }
+
+
+
+.BoxDescrizione  {
+     text-align: center;
+     margin-top: 250px;
+ }
+
+.TestoDescrizione {
+     text-align: left;
+ }
