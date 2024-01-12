@@ -49,10 +49,11 @@ body {
       
 }
 
+/*per togliere i punti della lista*/
 #menu li {
     list-style-type: none;
-
 }
+
 #menu.active {
     right: 0;
 }
@@ -138,17 +139,18 @@ div.main-content {
     }
 
 /*IMG*/
-div.item, img, section#section1 {
+div.item, img, section#section1{
     width: 525px;
    
 }
-
 
 
 .item img {
     height: 100vh;
     object-fit: cover;
 }
+
+
 
 div.container {
     margin-top: 140px;

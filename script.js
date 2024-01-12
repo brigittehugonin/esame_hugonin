@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', setup)
 
 "use strict";
 
+//menu
 const menu = document.querySelector('#menu')
 const toggle = document.querySelector('#toggle')
 
