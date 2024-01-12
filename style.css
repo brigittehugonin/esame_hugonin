@@ -178,8 +178,10 @@ section#section1 viewport {
 
 
 
+
+
 .BoxDescrizione  {
-     text-align: center;
+     align-content: center;
      margin-top: 250px;
  }
 
