@@ -10,16 +10,20 @@ body {
     color: #FFFFFF;
     }
 
-/*
+
 #menu a {
     font-family: "syne";
-    font-size: 18px;
+    font-size: 45px;
     color: white;
     margin-top: 20px;
+    line-height: 130%;
     padding: 7px;
     text-decoration: none;
-}*/
+}
 
+#menu a:hover {
+    color: #fcff51;
+}
 
 #toggle {
     transform: scale(1.5);
@@ -32,7 +36,7 @@ body {
 }
 
 #menu {
-    background-color: #ccc;
+    background-color: #000000;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -121,9 +125,7 @@ div.item, img, section#section1 {
    
 }
 
-.item {
-    border: 10px solid red;
-}
+
 
 .item img {
     height: 100vh;
