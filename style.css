@@ -102,6 +102,23 @@ p {
     color: rgb(156, 156, 156);
 }
 
+
+
+
+
+button {
+    background-color: #fcff51;
+    font-weight: 200;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#ButtonMore button:hover {
+    color: #fcff51;
+}
+
+
 a.button {
     font-weight: 200;
     font-size: 20px;
@@ -113,6 +130,20 @@ a.button {
 a.button:hover {
     color: #fcff51;
 }
+
+.main-content #DueColonne {
+    display: none;
+}
+
+.main-content #ButtonMore {
+    color: #fcff51;
+    text-decoration: underline 6%;
+    cursor: pointer;
+}
+
+
+
+
 /* CONTENITORE CON IMG, TESTI e ICONE SOCIAL */
 div.main-content {
     display: inline-flex;
