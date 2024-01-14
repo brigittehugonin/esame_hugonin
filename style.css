@@ -135,7 +135,6 @@ a.button:hover {
 /* CONTENITORE CON IMG, TESTI e ICONE SOCIAL */
 div.main-content {
     display: inline-flex;
-    margin-bottom: 20px;
     }
 
 /*IMG*/
@@ -160,6 +159,7 @@ div.container {
 #social-icons a{
      font-size: 1.4em;
      color: #FFFFFF;
+     margin-bottom: 2px;
  }
 
 #social-icons a:hover {
@@ -170,6 +170,7 @@ div.container {
 ul#social-icons.inline-list {
     margin-top: 110px;
     margin-left: -5px;
+    margin-bottom: -50px;
 }
 
 section#section1 viewport {

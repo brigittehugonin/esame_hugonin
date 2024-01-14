@@ -1,6 +1,95 @@
-/* IPAD PORTRAIT */
-@media only screen and (min-width: 768px) {}
+/* tablet*/
+@media (max-width: 767px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+            font-size: 10px;
+    }
+    h3 {
+            font-size: 10px;
+    }
+    p {
+        font-size: 20px;
+    }
 
-/* DESKTOP */
-@media only screen and (min-width: 1200px){
+    /* Cambia il layout a colonna su schermi più piccoli */
+@media (max-width: 767px) {
+    section#section1 {
+        width: 100%;
+        float: none;
+    }
 }
+}
+
+/* iPhone*/
+@media only screen 
+and (device-width: 375px)
+and (device-height: 667px){
+        div.main-content {
+            width: 100%;
+            float: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+        font-size: 19px;
+        }
+        h2 {
+            font-size: 8px;
+        }
+        h3 {
+            font-size: 8px;
+        }
+        p {
+        font-size: 8px;
+        }
+
+/* Contenitore flessibile */
+div.main-content {
+    display: flex;
+    flex-direction: column;
+    /* I figli saranno posizionati in colonna */
+    align-items: center;
+    /* Allinea i figli al centro orizzontalmente */
+    text-align: center;
+    /* Allinea il testo al centro */
+}
+
+/* IMG */
+div.item,
+img,
+section#section1 {
+    width: 100%;
+    /* Larghezza al 100% per essere responsive */
+}
+
+div.item img {
+    height: auto;
+    /* Altezza automatica per mantenere le proporzioni originali */
+    object-fit: cover;
+}
+
+/* Regole per l'allineamento */
+div.container {
+    margin-top: 40px;
+    /* Ridotto il margine top per uno spaziamento più compatto */
+    margin-left: 20px;
+    /* Ridotto il margine left per uno spaziamento più compatto */
+}
+
+/* Media query per dispositivi con larghezza massima di 767px (ad esempio, iPhone) */
+@media (max-width: 767px) {
+    div.container {
+        margin-top: 20px;
+        /* Modificato il margine top per uno spaziamento più compatto su schermi più piccoli */
+        margin-left: 0;
+        /* Rimossi i margini laterali su schermi più piccoli */
+    }
+}
+    }
+
+
+
