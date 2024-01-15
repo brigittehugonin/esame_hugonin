@@ -34,11 +34,15 @@ function toggleReadMore() {
 
     // Aggiorna il testo del pulsante in base allo stato attuale
     if (isHidden) {
-        buttonMore.textContent = 'Read less';
+        buttonMore.textContent = 'Leggi di meno';
     } else {
-        buttonMore.textContent = 'Read more';
+        buttonMore.textContent = 'Leggi di più';
     }
 }
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
