@@ -152,7 +152,6 @@ div.item, img, section#section1{
 }
 
 .icons {
-    position: fixed;
     text-align: bottom;
     }
 
@@ -177,8 +176,11 @@ ul#social-icons.inline-list {
     margin-left: -5px;
 }
 
+
+
 section#section1 viewport {
     height: 100vh;
+    position: relative;
 }
 
 
@@ -196,3 +198,9 @@ h5 {
     margin-top: 1px;
     color: #FFFFFF;
     }
+
+
+
+
+
+
