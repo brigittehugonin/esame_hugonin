@@ -113,7 +113,8 @@ a.button:hover {
     display: none;
     font-weight: 200;
     font-size: 20px;
-    margin-top: 1px;
+    margin-top: 15px;
+    color: white;
 }
 
 /*per sapere di più*/

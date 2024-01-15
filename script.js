@@ -21,19 +21,21 @@ const toggleMenu = () => {
 
 
 
-
-//read more
-let nuovoTesto = document.querySelector('#TestoNascosto');
+// Read More
+let testoNascosto = document.querySelector('#TestoNascosto');
 let buttonMore = document.querySelector('#ButtonMore');
 
+function toggleReadMore() {
+    // Verifica se lo stile dell'elemento è 'none' o vuoto
+    let isHidden = testoNascosto.style.display === 'none' || testoNascosto.style.display === '';
 
-function ButtonMore() {
-    nuovoTesto.style.display = readMoreOpen ? 'none' : 'block';
-    if (nuovoTesto.style.display === 'none' || nuovoTesto.style.display === '') {
-        nuovoTesto.style.display = 'block';
+    // Aggiorna la visibilità dell'elemento
+    testoNascosto.style.display = isHidden ? 'block' : 'none';
+
+    // Aggiorna il testo del pulsante in base allo stato attuale
+    if (isHidden) {
         buttonMore.textContent = 'Read less';
     } else {
-        nuovoTesto.style.display = 'none';
         buttonMore.textContent = 'Read more';
     }
 }
