@@ -27,8 +27,7 @@ let nuovoTesto = document.querySelector('#TestoNascosto');
 let buttonMore = document.querySelector('#ButtonMore');
 
 
-
-function toggleReadMore() {
+function ButtonMore() {
     nuovoTesto.style.display = readMoreOpen ? 'none' : 'block';
     if (nuovoTesto.style.display === 'none' || nuovoTesto.style.display === '') {
         nuovoTesto.style.display = 'block';
