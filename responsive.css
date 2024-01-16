@@ -6,7 +6,8 @@
         }
         h2 {
             font-size: 14px;
-            margin-top: 3px;
+            margin-top: 5px;
+            line-height: 22px;
         }
         h3 {
             font-size: 12px;
@@ -83,7 +84,7 @@ div.container {
         }
         h2 {
             font-size: 25px;
-            margin-top: 3px;
+            margin-top: 6px;
         }
         h3 {
             font-size: 20px;
