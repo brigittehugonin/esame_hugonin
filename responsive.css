@@ -1,4 +1,4 @@
-/* iPhone*/
+/* Smartphone*/
 @media (max-width: 767px) {
         h1 {
             font-size: 28px;
@@ -9,18 +9,18 @@
             margin-top: 3px;
         }
         h3 {
-            font-size: 11px;
+            font-size: 12px;
             margin-top: 30px;
         }
         p {
-            font-size: 11px;
+            font-size: 12px;
         }
         #ButtonMore {
-            font-size: 11px;
+            font-size: 12px;
         }
         #TestoNascosto {
-            font-size: 11px;
-            margin-top: 11px;
+            font-size: 12px;
+            margin-top: 12px;
 }
 
 /* Cambia il layout a colonna su schermi più piccoli */
@@ -53,15 +53,98 @@ section#section1 {
 
 
 #social-icons a {
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+ul#social-icons.inline-list {
+    margin-top: 25px;
 }
 
 /* Allineamento */
 div.container {
     margin-top: 0px;
     /* Ridotto il margine top per uno spaziamento più compatto */
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+    }
+
+
+
+
+
+
+
+
+    /* Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+        h1 {
+            font-size: 49px;
+            margin-top: 50px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-top: 3px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        #ButtonMore {
+            font-size: 20px;
+        }
+        #TestoNascosto {
+            font-size: 20px;
+            margin-top: 20px;
+}
+
+/* Cambia il layout a colonna su schermi più piccoli */
+section#section1 {
+         width: 100%;
+         float: none;
+}
+
+/* Contenitore flessibile */
+div.main-content {
+    display: flex;
+    flex-direction: column;
+    /* I figli saranno posizionati in colonna */
+    align-items: center;
+    /* Allinea i figli al centro orizzontalmente */
+    text-align: center;
+    /* Allinea il testo al centro */
+}
+
+/* IMG */
+div.item,
+img,
+section#section1 {
+    width: 100%;
+    /* Larghezza al 100% per essere responsive */
+    height: auto;
+        /* Altezza automatica per mantenere le proporzioni originali */
+    object-fit: cover;
+}
+
+
+#social-icons a {
+    font-size: 1.2em;
+}
+
+ul#social-icons.inline-list {
+    margin-top: 50px;
+}
+
+/* Allineamento */
+div.container {
+    margin-top: 0px;
+    /* Ridotto il margine top per uno spaziamento più compatto */
+    margin-left: 165px;
+    margin-right: 165px;
 }
 
     }
