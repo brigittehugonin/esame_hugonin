@@ -17,7 +17,6 @@ const toggleMenu = () => {
 
 
 
-
 // Read More
 let testoNascosto = document.querySelector('#TestoNascosto');
 let buttonMore = document.querySelector('#ButtonMore');
@@ -36,7 +35,6 @@ function toggleReadMore() {
         buttonMore.textContent = 'Leggi di più';
     }
 }
-
 
 
 
