@@ -36,8 +36,6 @@ div.main-content {
     /* I figli saranno posizionati in colonna */
     align-items: center;
     /* Allinea i figli al centro orizzontalmente */
-    text-align: center;
-    /* Allinea il testo al centro */
 }
 
 /* IMG */
@@ -64,8 +62,8 @@ ul#social-icons.inline-list {
 div.container {
     margin-top: 0px;
     /* Ridotto il margine top per uno spaziamento più compatto */
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
     }
@@ -115,8 +113,6 @@ div.main-content {
     /* I figli saranno posizionati in colonna */
     align-items: center;
     /* Allinea i figli al centro orizzontalmente */
-    text-align: center;
-    /* Allinea il testo al centro */
 }
 
 /* IMG */
@@ -143,8 +139,8 @@ ul#social-icons.inline-list {
 div.container {
     margin-top: 0px;
     /* Ridotto il margine top per uno spaziamento più compatto */
-    margin-left: 165px;
-    margin-right: 165px;
+    margin-left: 22%;
+    margin-right: 22%;
 }
 
     }

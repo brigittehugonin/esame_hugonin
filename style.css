@@ -86,7 +86,7 @@ h2 {
 h3 {
     font-weight: 200;
     font-size: 20px;
-    margin-top: 99px;
+    margin-top: 80px;
     text-align: justify;
 }
 
@@ -153,8 +153,8 @@ div.item, img, section#section1{
 
 
 div.container {
-    margin-top: 140px;
-    margin-left: 210px;
+    margin-top: 120px;
+    margin-left: 17%;
     margin-right: 17%;
 }
 
@@ -177,7 +177,7 @@ ul#social-icons.inline-list {
 
 
 section#section1 viewport {
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
