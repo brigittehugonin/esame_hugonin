@@ -46,13 +46,11 @@ img,
 section#section1 {
     width: 100%;
     /* Larghezza al 100% per essere responsive */
-}
-
-div.item img {
     height: auto;
-    /* Altezza automatica per mantenere le proporzioni originali */
+        /* Altezza automatica per mantenere le proporzioni originali */
     object-fit: cover;
 }
+
 
 #social-icons a {
     font-size: 0.8em;
