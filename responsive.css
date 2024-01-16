@@ -22,7 +22,15 @@
         #TestoNascosto {
             font-size: 12px;
             margin-top: 12px;
+        }
+        #textAbout {
+            font-size: 12px;
+            margin-top: 12px;
+        }
+        a.button {
+            font-size: 12px;
 }
+
 
 /* Cambia il layout a colonna su schermi più piccoli */
 section#section1 {
@@ -99,6 +107,7 @@ div.container {
         #TestoNascosto {
             font-size: 20px;
             margin-top: 20px;
+        }
 }
 
 /* Cambia il layout a colonna su schermi più piccoli */
@@ -144,4 +153,8 @@ div.container {
     margin-right: 22%;
 }
 
-    }
+/* Allineamento About */
+div.TestoDescrizione {
+    margin-left: 22%;
+    margin-right: 22%;
+}
