@@ -108,7 +108,7 @@ div.container {
             font-size: 20px;
             margin-top: 20px;
         }
-}
+
 
 /* Cambia il layout a colonna su schermi più piccoli */
 section#section1 {
@@ -152,9 +152,4 @@ div.container {
     margin-left: 22%;
     margin-right: 22%;
 }
-
-/* Allineamento About */
-div.TestoDescrizione {
-    margin-left: 22%;
-    margin-right: 22%;
 }
