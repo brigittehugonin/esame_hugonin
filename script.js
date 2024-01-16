@@ -15,9 +15,6 @@ const toggleMenu = () => {
     menu.classList.toggle('active')
 }
 
-/*document.addEventListener('DOMContentLoaded', () => {
-    toggle.addEventListener('click', toggleMenu)
-})*/
 
 
 

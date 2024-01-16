@@ -193,6 +193,9 @@ section#section1 viewport {
 #textAbout {
     font-weight: 200;
     font-size: 20px;
-    margin-top: 1px;
+    margin-top: 15px;
     color: #FFFFFF;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
     }
