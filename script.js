@@ -1,15 +1,5 @@
-function setup() {
-    console.log('setup')
-}
-
-document.addEventListener('DOMContentLoaded', setup)
-
-"use strict";
-
-//menu
 const menu = document.querySelector('#menu')
 const toggle = document.querySelector('#toggle')
-
 const toggleMenu = () => {
     toggle.classList.toggle('is-active')
     menu.classList.toggle('active')
@@ -17,29 +7,16 @@ const toggleMenu = () => {
 
 
 
-// Read More
-let testoNascosto = document.querySelector('#TestoNascosto');
-let buttonMore = document.querySelector('#ButtonMore');
+let readMoreBtn = document.getElementById('readMoreBtn');
+let textInfo = document.getElementById('textInfo');
 
 function toggleReadMore() {
-    // Verifica se lo stile dell'elemento è 'none' o vuoto
-    let isHidden = testoNascosto.style.display === 'none' || testoNascosto.style.display === '';
-
-    // Aggiorna la visibilità dell'elemento
-    testoNascosto.style.display = isHidden ? 'block' : 'none';
-
-    // Aggiorna il testo del pulsante in base allo stato attuale
-    if (isHidden) {
-        buttonMore.textContent = 'Leggi di meno';
-    } else {
-        buttonMore.textContent = 'Leggi di più';
-    }
+    let isExpanded = textInfo.classList.contains('show');
+    readMoreBtn.textContent = isExpanded ? 'Leggi di più' : 'Leggi di meno';
 }
-
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
-    buttonMore.addEventListener('click', toggleReadMore)
+    readMoreBtn.addEventListener('click', toggleReadMore)
 })

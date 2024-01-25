@@ -4,85 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esame</title>
-
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
- <!-- goggle fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&family=Syne:wght@400;600&display=swap"
-    rel="stylesheet">
-
-<!-- fontawsome -->
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
+    <!-- goggle fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&family=Syne:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/7311f15228.js" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/hamburgers.css" rel="stylesheet">
-    <link href="./css/responsive.css" rel="stylesheet">
-
-<!-- libreria per il responsive LA INSERISCO??? -->
-<script type="text/javascript" src="assets/js/respond.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+    <!-- <link href="./css/responsive.css" rel="stylesheet"> -->
 </head>
 
 
 <body>
+    <!-- immagine about -->
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <div 
+            id="image1"
+            class="col-12 col-md-6 g-0">
+            <!-- <img class="img-fluid" src="img/brigitte.hugonin.jpg" alt="img1"> -->
+        </div>
+        <div class="col-12 col-md-6 g-0 d-flex justify-content-center align-items-center">
+            <div class="w-75 ">
+                <h1 class="fs-1 fw-bold mb-2 custom-font">Brigitte Hugonin</h1>
+                <h2 class="fs-3 fw-normal mb-5 custom-font">Graphic designer</h2>
+                <h3 class="fs-5 fw-light lh-md mb-0">
+                    Ciao! Sono una graphic and web designer. Mi sono laureata alla LABA di Firenze e ora sto frequentando il biennio
+                    alla Laba di Brescia.
+                </h3>
+                <p class="fs-5 fw-light">
+                    Su questo sito troverai i miei progetti grafici.
+                </p>        
+
+                <p class="d-inline-flex gap-1">
+                <a class="text-decoration-none fs-5 fw-light" data-bs-toggle="collapse" href="#textInfo" role="button" aria-expanded="false" aria-controls="textInfo" id="readMoreBtn">
+                   Leggi di più
+                </a>
+                </p>
+                <div class="collapse" id="textInfo">
+                <div class="fs-5 fw-light lh-md">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+                </div>
+                
+                <div class="icons mt-5">
+                    <ul id="social-icons" class="p-0 inline-list">
+                        <li class="me-2"><a href="https://www.instagram.com/brigitte_hugonin/"> <i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="me-2"><a href="https://www.facebook.com/brigitte.hugonin"> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="me-2"><a href="https://it.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- MENU -->
-    <button id="toggle" class="hamburger hamburger--arrow" type="button">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-    <div id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Progetti</a></li>
-            <li><a href="#">Contatti</a></li>
-        </ul>
-    </div>
-
-
-
-
-
-<!-- testo about -->
-<main>
-    <div class="main-content">
-        <!-- immagine about -->
-        <section id="section1">
-            <div class="item" href="#">
-                <img src="img/brigitte.hugonin.jpg" alt="img1">
-            </div>
-        </section>
-        <div class="container">
-             <h1 class="headline">Brigitte Hugonin</h1>
-             <h2 class="subtitle">Graphic designer</h2>
-             <h3 class="description">Ciao! Sono una graphic and web designer. Mi sono laureata alla LABA di Firenze e ora sto frequentando il biennio
-                alla Laba di Brescia.</h3>
-            <p class="text">Su questo sito troverai i miei progetti grafici</p>
-            
-
-            <p id="TestoNascosto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed purus nisl. Maecenas a mi a nulla
-                luctus euismod in ut tortor.
-                Phasellus dapibus, nisl et commodo lacinia, sapien ligula interdum lectus.
-            </p>
-            <h4 id="ButtonMore">Leggi di più</h4>
-        <div class="icons">
-            <ul id="social-icons" class="inline-list">
-                <li> <a href="https://www.instagram.com/brigitte_hugonin/"> <i class="fa-brands fa-instagram"></i></a></li>
-                <li> <a href="https://www.facebook.com/brigitte.hugonin"> <i class="fa-brands fa-facebook"></i></a></li>
-                <li> <a href="https://it.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-            </div>
-    </div>
-
-<!-- Galleria -->
-
-    <script src="script.js"></script>
-</main>
+<button id="toggle" class="hamburger hamburger--arrow" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>
+<div id="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Progetti</a></li>
+        <li><a href="#">Contatti</a></li>
+    </ul>
+</div>
+        
+        <script src="script.js"></script>
+    </main>
 </body>
 </html>

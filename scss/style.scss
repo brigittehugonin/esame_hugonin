@@ -1,3 +1,8 @@
+$color1: #fcff51;
+$color-text: #ffffff;
+$color-button: #fbfbc7;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
-    color: #ffffff;
+    color: $color-text;
+}
+
+.custom-font {
+    font-family: 'syne', sans-serif;
+    color: $color1;
 }
 
 #toggle {
@@ -38,13 +48,13 @@ body {
     a {
         font-family: "syne";
         font-size: 45px;
-        color: white;
+        color: $color-text;
         margin-top: 20px;
         line-height: 130%;
         padding: 7px;
         text-decoration: none;
         &:hover {
-                color: #fcff51;
+            color: $color1;
         }
     }
 }
@@ -53,262 +63,32 @@ body {
     right: 0;
 }
 
-/* CONTENITORE CON IMG, TESTI e ICONE SOCIAL */
-    div.main-content {
-        display: inline-flex;
-        margin-bottom: 20px;
-    .container {
-        margin-top: 140px;
-        margin-left: 210px;
-    section#section1 viewport {
-        height: 100vh;
-    }
-    img {
-        width: 525px;
-        height: 100vh;
-        object-fit: cover;
-    }
-    h1 {
-        font-family: "syne";
-        font-size: 55px;
-        font-weight: bolder;
-        color: #fcff51;
-    }
-    h2 {
-        font-size: 22px;
-        font-weight: 200;
-        letter-spacing: 2.9px;
-        color: #a0a152;
-        line-height: 32px;
-        padding-bottom: 8px;
-        margin-top: 7px;
-    }
-    h3 {
-        font-weight: 200;
-        font-size: 20px;
-        margin-top: 99px;
-    }
-    p {
-        font-weight: 200;
-        font-size: 20px;
-        margin-top: 1px;
-        color: rgb(156, 156, 156);
-    }
-    #TestoNascosto {
-        display: none;
-        font-weight: 200;
-        font-size: 20px;
-        margin-top: 1px;
-    }
-/*per sapere di più*/
-    #ButtonMore {
-        color: #a0a152;
-        text-decoration: underline 6%;
-        cursor: pointer;
-        font-weight: 200;
-        font-size: 20px;
-         margin-top: 1px;
-        &:hover {
-                color: #fcff51;
-        }
-    }
-    ul#social-icons.inline-list {
+a.text-decoration-none {
+    color: $color-button;
+}
+a:hover {
+    color: $color1;
+}
+
+
+
+ul#social-icons.inline-list {
     li {
         display: inline-block;
         margin: 0px;
-        }
+    }
     a {
-        font-size: 1.4em;
-        color: #FFFFFF;
-        &:hover {
-            color: #fcff51;
-            }
+        font-size: 2em;
+        color: $color-text;
     }
+    a:hover {
+    color: $color1;
 }
 }
-}
-
-/*ABOUT*/
-a.button {
-    font-weight: 200;
-    font-size: 20px;
-    margin-top: 1px;
-    color: #a0a152;
-    text-decoration: none;
-    &:hover {
-        color: #fcff51;
-           }
-}
-
-.TestoDescrizione {
-    text-align: center;
-    margin-top: 250px;
-    #textAbout {
-        font-weight: 200;
-        font-size: 20px;
-        margin-top: 15px;
-        color: #ffffff;
-        margin-left: 30%;
-        margin-right: 30%;
-        text-align: justify;
-    }
-}
 
 
-
-
-/* Smartphone*/
-@media (max-width: 767px) {
-        h1 {
-            font-size: 28px;
-            margin-top: 30px;
-        }
-        h2 {
-            font-size: 15px;
-            margin-top: 5px;
-            line-height: 22px;
-        }
-        h3 {
-            font-size: 12px;
-            margin-top: 30px;
-        }
-        p {
-            font-size: 12px;
-        }
-        #ButtonMore {
-            font-size: 12px;
-        }
-        #TestoNascosto {
-            font-size: 12px;
-            margin-top: 12px;
-        }
-        #textAbout {
-            font-size: 12px;
-            margin-top: 12px;
-        }
-        a.button {
-            font-size: 12px;
-}
-
-
-/* Cambia il layout a colonna su schermi più piccoli */
-section#section1 {
-         width: 100%;
-         float: none;
-}
-
-/* Contenitore flessibile */
-div.main-content {
-    display: flex;
-    flex-direction: column;
-    /* I figli saranno posizionati in colonna */
-    align-items: center;
-    /* Allinea i figli al centro orizzontalmente */
-}
-
-/* IMG */
-div.item,
-img,
-section#section1 {
-    width: 100%;
-    /* Larghezza al 100% per essere responsive */
-    height: auto;
-        /* Altezza automatica per mantenere le proporzioni originali */
-    object-fit: cover;
-}
-
-
-#social-icons a {
-    font-size: 0.9em;
-}
-
-ul#social-icons.inline-list {
-    margin-top: 25px;
-}
-
-/* Allineamento */
-div.container {
-    margin-top: 0px;
-    /* Ridotto il margine top per uno spaziamento più compatto */
-    margin-left: 22%;
-    margin-right: 22%;
-}
-
-    }
-
-
-
-
-
-
-
-
-    /* Tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {
-        h1 {
-            font-size: 49px;
-            margin-top: 50px;
-        }
-        h2 {
-            font-size: 25px;
-            margin-top: 6px;
-        }
-        h3 {
-            font-size: 20px;
-            margin-top: 50px;
-        }
-        p {
-            font-size: 20px;
-        }
-        #ButtonMore {
-            font-size: 20px;
-        }
-        #TestoNascosto {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-
-/* Cambia il layout a colonna su schermi più piccoli */
-section#section1 {
-         width: 100%;
-         float: none;
-}
-
-/* Contenitore flessibile */
-div.main-content {
-    display: flex;
-    flex-direction: column;
-    /* I figli saranno posizionati in colonna */
-    align-items: center;
-    /* Allinea i figli al centro orizzontalmente */
-}
-
-/* IMG */
-div.item,
-img,
-section#section1 {
-    width: 100%;
-    /* Larghezza al 100% per essere responsive */
-    height: auto;
-        /* Altezza automatica per mantenere le proporzioni originali */
-    object-fit: cover;
-}
-
-
-#social-icons a {
-    font-size: 1.2em;
-}
-
-ul#social-icons.inline-list {
-    margin-top: 50px;
-}
-
-/* Allineamento */
-div.container {
-    margin-top: 0px;
-    /* Ridotto il margine top per uno spaziamento più compatto */
-    margin-left: 22%;
-    margin-right: 22%;
-}
+#image1 {
+    background-image: url(../img/brigitte.hugonin.jpg);
+    background-size: cover;
+    background-position: center;
 }
