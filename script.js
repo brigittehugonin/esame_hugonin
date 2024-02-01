@@ -16,7 +16,62 @@ function toggleReadMore() {
 }
 
 
+
+
+const anim = () => {
+  const vwidth = window.innerWidth; // wiewport width
+  const message1 = document.getElementById("message1") //
+  
+  /* basic example
+  gsap.from(message1, 1, {x: -vwidth})
+  */
+  
+  /* stagger example 
+  gsap.from("h1 div", {x: -vwidth, stagger: 0.1})
+  */
+  
+  /* timeline example 
+  const tl1 = gsap.timeline()
+  tl1.from(message1, 1, {x: -vwidth})
+  tl1.to(message1, 1, {scale: 1.2, delay: -0.5})
+  tl1.to(message1, 1, {x: vwidth, scale: .5})
+  */
+  
+  /* stagger example */
+  // see docs at https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#headline",
+      pin: true, // pin the trigger element while active
+      start: "top 100px", // 1st param reference to trigger, 2nd param is a reference to the viewport
+      scrub: true, // link animation to mouse scroll
+      markers: true, // show debug markers
+      onEnter: () => { // callback when trigger enters
+        console.log("enter")
+      },
+      onLeave: () => { // callback when trigger leaves
+        console.log("leave")
+      }
+    }
+  });
+  tl2.from(message1, 1, {x: -vwidth})
+  tl2.from(message1, 1, {scale: 1.3, delay: 0.3})
+  
+  message1.addEventListener("click", () =>{
+    //gsap.to(message1, 1, {x: vwidth})
+    gsap.set(message1, {x: 100})
+  })
+}
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
     readMoreBtn.addEventListener('click', toggleReadMore)
 })
+
+document.addEventListener("DOMContentLoaded", anim)

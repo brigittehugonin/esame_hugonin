@@ -84,4 +84,40 @@ ul#social-icons.inline-list a:hover {
   background-position: center;
 }
 
+header, footer {
+  height: 300px;
+}
+
+section {
+  height: calc(100vh - 200px);
+  border: 1px solid #fcff51;
+}
+
+#headline h1 {
+  font-size: 5em;
+  font-family: "syne";
+}
+
+/*prove io*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+button {
+  text-transform: none;
+  margin: 0.25rem;
+}
+
+.nav.light {
+  padding-top: 2rem;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
