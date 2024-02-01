@@ -78,7 +78,7 @@ let tween = gsap.to(".flair", {
   paused: true
 });
 
-// click handlers for controlling the tween instance...
+// click handlers for controlling the tween instance
 document.querySelector("#play").onclick = () => tween.play();
 document.querySelector("#pause").onclick = () => tween.pause();
 document.querySelector("#resume").onclick = () => tween.resume();
