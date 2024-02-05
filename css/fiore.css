@@ -1,8 +1,27 @@
+/* Typography */
+
 @font-face {
     font-display: block;
-    font-family: Poppins;
+    font-family: Mori;
     font-style: normal;
     font-weight: 400;
+    src: url(https://assets.codepen.io/16327/PPMori-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-display: block;
+    font-family: Mori;
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://assets.codepen.io/16327/PPMori-SemiBold.woff) format("woff");
+}
+
+@font-face {
+    font-display: block;
+    font-family: Fraktion Mono;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://assets.codepen.io/16327/PPFraktionMono-Bold.woff) format("woff");
 }
 
 :root {
@@ -126,8 +145,43 @@
     accent-color: var(--color-shockingly-green);
 }
 
+/* lovely fluid fonts */
 
+:root {
+    --fluid-min-width: 320;
+    --fluid-max-width: 1140;
 
+    --fluid-screen: 100vw;
+    --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)));
+}
+
+@media screen and (min-width: 1140px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+}
+
+:root {
+    --f-0-min: 16;
+    --f-0-max: 18;
+    --step-0: calc(((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) * var(--fluid-bp));
+
+    --f-1-min: 16;
+    --f-1-max: 22.5;
+    --step-1: calc(((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) * var(--fluid-bp));
+
+    --f-2-min: 23.04;
+    --f-2-max: 28.13;
+    --step-2: calc(((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) * var(--fluid-bp));
+
+    --f-3-min: 27.65;
+    --f-3-max: 35.16;
+    --step-3: calc(((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) * var(--fluid-bp));
+
+    --f-4-min: 33.18;
+    --f-4-max: 46;
+    --step-4: calc(((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) * var(--fluid-bp));
+}
 
 /* fluid paddings */
 
@@ -246,6 +300,104 @@
     justify-content: center;
 }
 
+/* colors */
+
+.green {
+    background-color: var(--green);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.gray,
+.grey {
+    background-color: var(--grey);
+}
+
+body {
+    color: var(--color-surface-white);
+    background-color: var(--dark);
+    font-family: Mori, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: var(--step-0);
+    line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1,
+.h1 {
+    font-size: var(--step-4);
+}
+
+h2,
+.h2 {
+    font-size: var(--step-3);
+}
+
+h3,
+.h3 {
+    font-size: var(--step-2);
+}
+
+h4,
+.h4,
+.lead {
+    font-size: var(--step-1);
+}
+
+a {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.light a {
+    color: var(--green-dark);
+}
 
 /* button:not('.box') { breaking for some reason in codepen? */
 button {
@@ -286,6 +438,43 @@ button {
     right: 15px;
 }
 
+/* panels  */
+
+.panel {
+    min-height: 100vh;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.panel.gray {
+    background-color: #777;
+    background-image: var(--gradient-macha);
+}
+
+.panel.blue {
+    background-color: #2c7ad2;
+    background-image: var(--gradient-summer-fair);
+}
+
+.panel.orange {
+    background-color: #e77614;
+    background-image: var(--gradient-orange-crush);
+}
+
+.panel.red {
+    background-color: #c82736;
+    background-image: var(--gradient-lipstick);
+}
+
+.panel.purple {
+    background-color: #8d3dae;
+    background-image: var(--gradient-purple-haze);
+}
+
+.panel.green {
+    background-color: #28a92b;
+    background-image: var(--gradient-macha);
+}
 
 /* SCROLL DOWN */
 .scroll-down {
@@ -341,7 +530,24 @@ ul pre.prettyprint {
     margin-left: -0.5rem;
 }
 
+/* prism */
 
+pre {
+    --ifm-pre-background: var(--ifm-color-gray-800) !important;
+    --ifm-font-family-monospace: "Fraktion Mono";
+}
+
+/* Plain text style */
+code {
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    vertical-align: baseline;
+    background: #28292b;
+    color: #f5f4e6de;
+}
 
 /* Comment */
 code .token.comment {
@@ -611,4 +817,78 @@ code .token.url {
     justify-content: space-around;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+.gradient-green {
+    background: var(--gradient-macha),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-green-2 {
+    background: var(--gradient-emerald-city),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-orange {
+    background: var(--gradient-orange-crush),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-purple {
+    background: var(--gradient-purple-haze),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-blue-2 {
+    background: var(--gradient-summer-fair),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-blue {
+    background: var(--color-ui-gradient),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+.gradient-red {
+    background: var(--gradient-lipstick),
+        url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    /* Replace with the path to your noise texture image */
+    background-blend-mode: color-dodge;
+    /* Blend the noise texture with the gradient */
+}
+
+
+
+.noise {
+    position: relative;
+}
+
+.noise:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url('https://assets.codepen.io/16327/noise-e82662fe.png');
+    opacity: 0.4;
+    pointer-events: none;
 }

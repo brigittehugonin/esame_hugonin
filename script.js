@@ -22,21 +22,10 @@ const anim = () => {
   const vwidth = window.innerWidth; // wiewport width
   const message1 = document.getElementById("message1") //
   
-  /* basic example
-  gsap.from(message1, 1, {x: -vwidth})
-  */
-  
-  /* stagger example 
-  gsap.from("h1 div", {x: -vwidth, stagger: 0.1})
-  */
-  
-  /* timeline example 
-  const tl1 = gsap.timeline()
-  tl1.from(message1, 1, {x: -vwidth})
-  tl1.to(message1, 1, {scale: 1.2, delay: -0.5})
-  tl1.to(message1, 1, {x: vwidth, scale: .5})
-  */
-  
+
+
+
+
   /* stagger example */
   // see docs at https://gsap.com/docs/v3/Plugins/ScrollTrigger/
   const tl2 = gsap.timeline({
@@ -86,7 +75,8 @@ document.querySelector("#reverse").onclick = () => tween.reverse();
 document.querySelector("#restart").onclick = () => tween.restart();
 
 
-
+// testo cambia colore
+gsap.to("#headline h1", { "color": "#fcff51", delay: 1, duration: 1, repeatDelay: 0.5, yoyo: true, repeat: -1 });
 
 
 document.addEventListener('DOMContentLoaded', () => {

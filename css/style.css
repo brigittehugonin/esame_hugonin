@@ -84,8 +84,9 @@ ul#social-icons.inline-list a:hover {
   background-position: center;
 }
 
-header, footer {
-  height: 300px;
+/*testo*/
+footer {
+  margin-bottom: 50px;
 }
 
 section {
@@ -96,8 +97,21 @@ section {
 #headline h1 {
   font-size: 5em;
   font-family: "syne";
+  color: #ffffff;
 }
 
+@media (max-width: 767px) {
+  #headline h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headline h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
 /*fiorellino*/
 body {
   display: flex;
