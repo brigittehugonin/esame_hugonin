@@ -41,6 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
     /*per togliere i punti della lista*/
     li {
         list-style-type: none;
@@ -107,19 +108,19 @@ section {
 }
 
 #headline h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     font-family: "syne";
     color: $color-text;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     #headline h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             text-align: center;
         }
     }
 @media (max-width: 767px) {
     #headline h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: center;
     }
 }
@@ -142,8 +143,8 @@ button {
 
 .nav.light {
     padding-top: 2rem;
-    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
+    background-color: transparent;
     justify-content: center
 }

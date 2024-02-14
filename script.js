@@ -20,8 +20,7 @@ const anim = () => {
   const vwidth = window.innerWidth; // wiewport width
   const message1 = document.getElementById("message1") //
 
-  /* stagger example */
-  // see docs at https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+  /* stagger */
   const tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: "#headline",
@@ -37,12 +36,19 @@ const anim = () => {
       }
     }
   });
-  tl2.from(message1, 1, {x: -vwidth})
-  tl2.from(message1, 1, {scale: 1.3, delay: 0.3})
-  
-  message1.addEventListener("click", () =>{
+  tl2.from(message1, 1, { x: -vwidth })
+  tl2.from(message1, 1, { 
+    scale: 1.2,
+    delay: 0.1, 
+    duration: 0.2, 
+    repeatDelay: 0.2, 
+    yoyo: true, 
+    repeat: -0.3 })
+
+
+  message1.addEventListener("click", () => {
     //gsap.to(message1, 1, {x: vwidth})
-    gsap.set(message1, {x: 100})
+    gsap.set(message1, { x: 100 })
   })
 }
 
