@@ -1,6 +1,6 @@
 $color1: #fcff51;
 $color-text: #ffffff;
-$color-button: #fbfbc7;
+$color-button: #fcfcbe;
 
 
 * {
@@ -111,18 +111,18 @@ section {
     font-family: "syne";
     color: $color-text;
 }
-@media (max-width: 767px) {
-    #headline h1 {
-            font-size: 3em;
-            text-align: center;
-        }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
     #headline h1 {
             font-size: 3.5em;
             text-align: center;
         }
     }
+@media (max-width: 767px) {
+    #headline h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+}
 
 
 

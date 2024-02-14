@@ -11,20 +11,14 @@ let readMoreBtn = document.getElementById('readMoreBtn');
 let textInfo = document.getElementById('textInfo');
 
 function toggleReadMore() {
-    let isExpanded = textInfo.classList.contains('show');
+  let isExpanded = textInfo.classList.contains('show');
     readMoreBtn.textContent = isExpanded ? 'Leggi di più' : 'Leggi di meno';
 }
-
-
 
 
 const anim = () => {
   const vwidth = window.innerWidth; // wiewport width
   const message1 = document.getElementById("message1") //
-  
-
-
-
 
   /* stagger example */
   // see docs at https://gsap.com/docs/v3/Plugins/ScrollTrigger/
@@ -53,6 +47,15 @@ const anim = () => {
 }
 
 
+// testo cambia colore
+gsap.to("#headline h1", { 
+  "color": "#fcff51", 
+  delay: 1, 
+  duration: 1, 
+  repeatDelay: 0.5, 
+  yoyo: true, 
+  repeat: -1 
+});
 
 
 // fiorellino
@@ -75,8 +78,7 @@ document.querySelector("#reverse").onclick = () => tween.reverse();
 document.querySelector("#restart").onclick = () => tween.restart();
 
 
-// testo cambia colore
-gsap.to("#headline h1", { "color": "#fcff51", delay: 1, duration: 1, repeatDelay: 0.5, yoyo: true, repeat: -1 });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
