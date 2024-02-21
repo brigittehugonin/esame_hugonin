@@ -87,6 +87,8 @@ document.querySelector("#restart").onclick = () => tween.restart();
 
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', toggleMenu)
     readMoreBtn.addEventListener('click', toggleReadMore)
