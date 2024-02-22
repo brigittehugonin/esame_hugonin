@@ -8,18 +8,22 @@ const toggleMenu = () => {
 
 
 let readMoreBtn = document.getElementById('readMoreBtn');
-let textInfo = document.getElementById('textInfo');
+
 
 function toggleReadMore() {
-  let isExpanded = textInfo.classList.contains('show');
-    readMoreBtn.textContent = isExpanded ? 'Leggi di più' : 'Leggi di meno';
+  if(textInfo.classList.contains('open')) {
+    textInfo.classList.remove('open');
+    readMoreBtn.textContent = 'Leggi di più';
+  } else {
+    textInfo.classList.add('open');
+    readMoreBtn.textContent = 'Leggi di meno';
+  }
 }
 
 
 const anim = () => {
   const vwidth = window.innerWidth; // wiewport width
   const message1 = document.getElementById("message1") //
-
   /* stagger */
   const tl2 = gsap.timeline({
     scrollTrigger: {
@@ -82,10 +86,6 @@ document.querySelector("#pause").onclick = () => tween.pause();
 document.querySelector("#resume").onclick = () => tween.resume();
 document.querySelector("#reverse").onclick = () => tween.reverse();
 document.querySelector("#restart").onclick = () => tween.restart();
-
-
-
-
 
 
 
