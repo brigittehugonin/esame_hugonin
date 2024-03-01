@@ -20,11 +20,11 @@ function toggleReadMore() {
   }
 }
 
-
+//Gioca con il fiorellino
 const anim = () => {
   const vwidth = window.innerWidth; // wiewport width
-  const message1 = document.getElementById("message1") //
-  /* stagger */
+  const message1 = document.getElementById("message1")
+  // stagger
   const tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: "#headline",
@@ -40,6 +40,7 @@ const anim = () => {
       }
     }
   });
+
   tl2.from(message1, 1, { x: -vwidth })
   tl2.from(message1, 1, { 
     scale: 1.2,
@@ -47,13 +48,7 @@ const anim = () => {
     duration: 0.2, 
     repeatDelay: 0.2, 
     yoyo: true, 
-    repeat: -0.3 })
-
-
-  message1.addEventListener("click", () => {
-    //gsap.to(message1, 1, {x: vwidth})
-    gsap.set(message1, { x: 100 })
-  })
+    repeat: -1 })
 }
 
 
@@ -74,7 +69,7 @@ let nav = document.querySelector('.nav')
 let tween = gsap.to(".flair", {
   duration: 2,
   x: () => nav.offsetWidth, // animate by the px width of the nav
-  xPercent: -100, // offset by the width of the box
+  xPercent: -100, //offset by the width of the box
   rotation: 360,
   ease: "none",
   paused: true
