@@ -20,22 +20,23 @@ function toggleReadMore() {
   }
 }
 
+
 //Gioca con il fiorellino
 const anim = () => {
-  const vwidth = window.innerWidth; // wiewport width
+  const vwidth = window.innerWidth; // save window width in viewport
   const message1 = document.getElementById("message1")
-  // stagger
+
   const tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: "#headline",
       pin: true, // pin the trigger element while active
-      start: "top 100px", // 1st param reference to trigger, 2nd param is a reference to the viewport
+      start: "top 100px", // when top of the trigger is 100px from top viewport
       scrub: true, // link animation to mouse scroll
-      markers: true, // show debug markers
+      markers: true,
       onEnter: () => { // callback when trigger enters
         console.log("enter")
       },
-      onLeave: () => { // callback when trigger leaves
+      onLeave: () => {
         console.log("leave")
       }
     }
@@ -68,14 +69,14 @@ let nav = document.querySelector('.nav')
 
 let tween = gsap.to(".flair", {
   duration: 2,
-  x: () => nav.offsetWidth, // animate by the px width of the nav
-  xPercent: -100, //offset by the width of the box
+  x: () => nav.offsetWidth, // animate by the width of the nav
+  xPercent: -100, //spostato del 100% verso sinistra
   rotation: 360,
   ease: "none",
   paused: true
 });
 
-// click handlers for controlling the tween instance
+// bottoni che controllano il tween
 document.querySelector("#play").onclick = () => tween.play();
 document.querySelector("#pause").onclick = () => tween.pause();
 document.querySelector("#resume").onclick = () => tween.resume();
